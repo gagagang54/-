@@ -1,0 +1,887 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../font/Manrope-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: InterRegular;
+    src: url(../font/Inter-Regular.otf);
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(../font/Inter-Bold.otf);
+}
+
+body {
+    background: #f9f8f6;
+    color: #142b4c;
+    font-family: Manrope;
+}
+
+a {
+    text-decoration: none;
+}
+
+.konteiner {
+    width: 1045px;
+    margin: 0 auto;
+}
+
+.knopka {
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 30px;
+    background: #c09b4e;
+    color: #fff;
+    font-size: 14px;
+    font-family: InterRegular;
+}
+
+header {
+    width: 1045px;
+    height: 71px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+
+header img {
+    display: block;
+    width: 269px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 16px;
+    font-family: InterRegular;
+}
+
+.nav-contact {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4px;
+}
+
+.nav-contact:hover {
+    color: #142b4c;
+    border-bottom: 1px solid #687587;
+}
+
+nav a:hover {
+    opacity: 0.5;
+}
+
+.knopka:hover {
+    background: #687587;
+    white-space: nowrap;
+}
+
+/* баннер начало */
+.glav {
+    height: 796px;
+    padding-top: 145px;
+    background: url(../image/banner.png) center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.glav-konteiner {
+    height: 570px;
+}
+
+.glav h1 {
+    width: 650px;
+    color: #fff;
+    font-size: 38px;
+    font-weight: 800;
+    font-family: Manrope;
+}
+
+.glav p {
+    margin-top: 7px;
+    color: #fff;
+    font-size: 16px;
+    font-family: InterRegular;
+}
+
+.podbor {
+    margin-top: 328px;
+}
+
+.glav-filters {
+    height: 78px;
+    margin-top: 40px;
+    padding: 8px 13px;
+    border-radius: 40px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-item {
+    width: 30%;
+    height: 38px;
+    text-align: center;
+    border-right: 1px solid #dedede;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-last {
+    border-right: none;
+
+}
+
+.filter-item p {
+    margin: 0;
+    color: #142b4c;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.naiti {
+    margin: 0;
+    white-space: nowrap;
+}
+/* баннер конец */
+
+/* мы рядом начало */
+.riadom {
+    padding: 105px 0 70px;
+}
+
+.riadom-konteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.riadomtext {
+    width: 426px;
+}
+
+.riadom h2 {
+    color: #c09b4e;
+    font-size: 38px;
+    font-weight: 800;
+    font-family: Manrope;
+}
+
+.riadom p {
+    margin-top: 14px;
+    color: #142b4c;
+    font-size: 16px;
+    font-family: InterRegular;
+}
+
+.riadomfoto {
+    display: block;
+    width: 571px;
+    height: 434px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.cifri {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 42px;
+}
+
+.cifra {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.cifra h3 {
+    color: #142b4c;
+    font-size: 43px;
+    font-weight: 800;
+    font-family: Manrope;
+}
+
+.cifra p {
+    margin-top: 2px;
+    color: #9299a3;
+    font-size: 12px;
+}
+/* мы рядом конец */
+
+/* направления начало */
+.napravleniya {
+    height: 543px;
+    padding: 0;
+    background: #f0eee9;
+}
+
+.napravleniya-konteiner {
+    height: 406px;
+    position: relative;
+}
+
+.naprtext {
+    width: 428px;
+    position: absolute;
+    left: 0;
+    top: 39px;
+}
+
+.naprtext h2 {
+    color: #c09b4e;
+    font-size: 38px;
+    font-weight: 800;
+    font-family: Manrope;
+}
+
+.naprtext p {
+    margin-top: 8px;
+    color: #142b4c;
+    font-size: 16px;
+    font-family: InterRegular;
+}
+
+.napravo {
+    width: 428px;
+    position: absolute;
+    top: 36px;
+    right: 0;
+}
+
+.pokupki {
+    width: 428px;
+    height: 183px;
+    margin-bottom: 25px;
+    padding: 24px;
+    border-radius: 16px;
+    background: #fff;
+    position: relative;
+}
+
+.arenda {
+    width: 428px;
+    height: 183px;
+    padding: 24px;
+    border-radius: 16px;
+    background: #fff;
+    position: relative;
+}
+
+.napr-card-text {
+    width: 100%;
+}
+
+.pokupki-title {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    color: #142b4c;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Manrope;
+}
+
+.arenda-title {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    color: #142b4c;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Manrope;
+}
+
+.pokupki-title img {
+    width: 39px;
+    height: 39px;
+    margin-right: 8px;
+}
+
+.arenda-title img {
+    width: 42px;
+    height: 42px;
+    margin-right: 8px;
+}
+
+.pokupki p {
+    width: 275px;
+    margin-top: 10px;
+    color: #9299a3;
+    font-size: 16px;
+    font-family: InterRegular;
+}
+
+.arenda p {
+    width: 275px;
+    margin-top: 10px;
+    color: #9299a3;
+    font-size: 16px;
+    font-family: InterRegular;
+}
+
+.napr-arrow {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 24px;
+    top: 72px;
+    cursor: pointer;
+}
+
+.prodazha {
+    width: 428px;
+    height: 183px;
+    position: absolute;
+    left: 0;
+    top: 244px;
+    padding: 24px;
+    border-radius: 16px;
+    background: #142b4c;
+}
+
+.prodazha-title {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Manrope;
+}
+
+.prodazha-title img {
+    width: 42px;
+    height: 42px;
+    margin-right: 8px;
+    
+}
+
+.prodazha p {
+    width: 275px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-family: InterRegular;
+}
+
+/* направления конец */
+
+/* о нас начало */
+.kompaniya {
+    height: 601px;
+    padding: 92px 0;
+}
+
+.kompaniya-konteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.komtext {
+    width: 432px;
+}
+
+.komtext h2 {
+    margin-bottom: 30px;
+    color: #c09b4e;
+    font-size: 38px;
+    font-weight: 800;
+    font-family: Manrope;
+}
+
+.komtext p {
+    margin-top: 16px;
+    color: #142b4c;
+    font-size: 16px;
+    font-family: InterRegular;
+}
+
+.komtext h3 {
+    margin-top: 38px;
+    color: #c09b4e;
+    font-size: 19px;
+    font-weight: 800;
+    font-family: Manrope;
+}
+
+.kom-knopka {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 16px 32px;
+    border-radius: 30px;
+    background: #c09b4e;
+    color: #fff;
+    font-size: 14px;
+    font-family: InterRegular;
+}
+
+.komfoto {
+    display: block;
+    width: 568px;
+    height: 379px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* о нас конец */
+
+/* выбор недвижимости начало */
+.katalog {
+    height: 825px;
+    padding: 59px 0 70px;
+    background: #fff;
+}
+
+.katalog h2 {
+    color: #c09b4e;
+    font-size: 38px;
+    font-weight: 800;
+    font-family: Manrope;
+}
+
+.filtri {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    margin-top: 55px;
+}
+
+.filtri select {
+    width: 208px;
+    height: 43px;
+    padding: 0 16px;
+    border: 1px solid #aeb4bc;
+    border-radius: 22px;
+    background: #fff;
+    color: #142b4c;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: InterRegular;
+}
+
+.filtri select:hover {
+    border-color: #c09b4e;
+}
+
+.spisok {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.kvartira {
+    width: 330px;
+    height: 508px;
+    padding: 18px 14px;
+    border-radius: 16px;
+    background: #f9f8f6;
+}
+
+.kvartira:hover {
+    box-shadow: 0 5px 18px rgba(20, 43, 76, 0.12);
+}
+
+.kvartira img {
+    display: block;
+    width: 100%;
+    height: 242px;
+    margin-top: 12px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.kvartira p {
+    margin-top: 10px;
+    color: #142b4c;
+    font-size: 16px;
+    font-family: InterRegular;
+}
+
+.srok {
+    margin: 0;
+    color: #9299a3;
+    font-size: 14px;
+}
+
+.kvartira h3 {
+    margin-top: 22px;
+    color: #142b4c;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: Manrope;
+}
+
+.kvartira-knopka {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 11px 22px;
+    border-radius: 30px;
+    background: #c09b4e;
+    color: #fff;
+    font-size: 14px;
+    font-family: InterRegular;
+}
+/* выбор недвижимости конец */
+
+/* простой путь начало */
+.put {
+    height: 669px;
+    padding: 89px 0 70px;
+}
+
+.put h2 {
+    text-align: center;
+    color: #c09b4e;
+    font-size: 38px;
+    font-weight: 800;
+    font-family: Manrope;
+}
+
+.shagi {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+}
+
+.shag {
+    width: 200px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.shag h3 {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 18px;
+    padding-top: 16px;
+    border-radius: 50%;
+    background: #c09b4e;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+    font-family: Manrope;
+}
+
+.liniya {
+    height: 2px;
+    position: absolute;
+    top: 32px;
+    left: 100px;
+    right: 100px;
+    z-index: 0;
+    background: #c09b4e;
+}
+
+.shag-last h3 {
+    background: #142b4c;
+}
+
+.put h4 {
+    color: #142b4c;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Manrope;
+}
+
+.put p {
+    margin-top: 10px;
+    color: #9299a3;
+    font-size: 14px;
+    font-family: InterRegular;
+}
+
+.plusy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.plus {
+    width: 355px;
+}
+
+.plus h3 {
+    margin-top: 22px;
+    color: #142b4c;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Manrope;
+}
+/* простой путь конец */
+
+/* форма начало */
+.vopros {
+    height: 536px;
+    padding: 120px 0 70px;
+    background: #f0eee9;
+}
+
+.vopros-konteiner {
+    padding: 38px 28px;
+    border-radius: 28px;
+    background: #203957;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.voprostext {
+    width: 350px;
+}
+
+.voprostext h2 {
+    color: #c09b4e;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: Manrope;
+}
+
+.voprostext h3 {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Manrope;
+}
+
+.voprostext p {
+    margin-top: 110px;
+    color: #fff;
+    font-size: 16px;
+    font-family: InterRegular;
+}
+
+.polya {
+    width: 570px;
+    display: block;
+}
+
+.stroka {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.imya {
+    width: 279px;
+    height: 46px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 13px;
+    font-family: InterRegular;
+}
+
+.telefon {
+    width: 279px;
+    height: 46px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 13px;
+    font-family: InterRegular;
+}
+
+.polya textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 14px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: InterRegular;
+}
+
+.polya a {
+    margin-top: 12px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.polya span {
+    text-decoration: underline;
+}
+
+.soglasie {
+    width: 14px;
+    height: 14px;
+}
+
+.polya button {
+    margin-top: 14px;
+    padding: 13px 28px;
+    border: none;
+    border-radius: 24px;
+    background: #c09b4e;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: InterRegular;
+}
+
+.polya button:hover {
+    background: #fff;
+    color: #142b4c;
+}
+/* форма конец */
+
+/* подвал начало */
+footer {
+    width: 100%;
+    padding: 60px 0;
+    background: #142b4c;
+    position: relative;
+}
+
+.footer-konteiner {
+    width: 914px;
+    margin: 0 auto;
+    height: 116px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    width: 203px;
+    padding-top: 35px;
+}
+
+.footer-logo img {
+    display: block;
+    width: 153px;
+    height: 42px;
+}
+
+.footer-nav {
+    width: 300px;
+}
+
+.footer-nav h3 {
+    margin-bottom: 24px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: InterBold;
+}
+
+.footer-nav-row {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 8px;
+}
+
+.footer-nav a {
+    color: #d9e0e9;
+    font-size: 14px;
+    font-family: InterRegular;
+}
+
+.footer-policy {
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: underline;
+}
+
+.footer-contacts {
+    width: 200px;
+}
+
+.footer-contacts h3 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: InterBold;
+}
+
+.footer-contacts a {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 7px;
+    color: #d9e0e9;
+    font-size: 14px;
+    font-family: InterRegular;
+    cursor: pointer;
+}
+
+.footer-contacts p img {
+    width: 12px;
+    height: 13px;
+    cursor: pointer;
+}
+
+.footer-social {
+    width: 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-social img {
+    display: block;
+    width: 22px;
+    height: 22px;
+}
+
+.copyright {
+    width: 914px;
+    margin: 7px auto 0;
+    text-align: center;
+    font-size: 8px;
+    font-family: InterRegular;
+    margin-top: 20px;
+}
+
+.konec {
+    background-color: #142b4c;
+}
+
+.polosa {
+
+    background-color: white;
+    width: 100%;
+    height: 1px;
+    
+    
+}
+
+.konec p {
+    margin-top: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+
+}
+
+/* подвал конец */
